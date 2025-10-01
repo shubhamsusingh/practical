@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centered Table Layout with Form</title>
+  <style>
+    .container {
+      background-color: #0896ce; 
+      padding: 40px 20px;
+      width: 80vw;
+      max-width: 1000px;
+      margin: 0 auto; 
+      border-radius: 12px;
+      
+    }
+
+    .wrapper {
+      display: table-cell;
+      vertical-align: middle; 
+    }
+
+    table.main-table {
+      margin: 0 auto; 
+      width: 100%; 
+      border-collapse: separate;
+      border-spacing: 40px;
+      text-align: left; 
+      background: #63f3f8;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <table class="main-table">
+        <tr>
+          <td>
+            <h1>Information</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt quaerat voluptate, ipsum
+              nobis odio quis facilis commodi necessitatibus! Fugiat quam nostrum 
+              iste deleniti non. Distinctio ut illo amet voluptates?
+            </p>
+            <button>Accepted</button>
+          </td>
+          <td>
+            <form action="">
+              <table>
+                <tr>
+                  <td>
+                    <label for="firstName">Name</label>
+                    <input type="text" id="firstName" name="firstName" />
+                  </td>
+                  <td>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" style="width: 100%;"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                  </td>
+                  <td>
+                    <label for="confirmPassword">Confirm</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="terms" required />
+                      Terms and Conditions
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <button type="submit">Register</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
